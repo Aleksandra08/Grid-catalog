@@ -1,4 +1,3 @@
-
 const SELECT_CLASS_NAME = 'select';
 const SELECT_EXPAND_CLASS_NAME = `${SELECT_CLASS_NAME}_expand`;
 const SELECT_TITLE_CLASS_NAME = `${SELECT_CLASS_NAME}__title`;
@@ -6,7 +5,7 @@ const SELECT_OPTIONS_CLASS_NAME = `${SELECT_CLASS_NAME}__options`;
 const SELECT_OPTION_CLASS_NAME = `${SELECT_CLASS_NAME}__option`;
 const SELECT_CONTROL_CLASS_NAME = `${SELECT_CLASS_NAME}__control`;
 
- class Select {
+class Select {
     constructor(target, options) {
         this.targetElement = target;
         this.options = options;
@@ -35,7 +34,7 @@ const SELECT_CONTROL_CLASS_NAME = `${SELECT_CLASS_NAME}__control`;
     }
 
     select(option) {
-        this.titleElement.innerHTML='<img class="world" src="img/world.png">' + option +
+        this.titleElement.innerHTML = '<img class="world" src="img/world.png">' + option +
             '<img class="arrow" src="img/Shape.png">';
         this.targetElement.classList.remove(SELECT_EXPAND_CLASS_NAME);
     }
@@ -60,3 +59,6 @@ const SELECT_CONTROL_CLASS_NAME = `${SELECT_CLASS_NAME}__control`;
 
 const language = ['ENGLISH', 'UKRAINIAN', 'RUSSIAN'];
 const languagesList = new Select(document.querySelector('#languagesList'), language);
+
+
+
